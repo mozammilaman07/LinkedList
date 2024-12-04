@@ -76,6 +76,33 @@ int findLength(Node *&head)
 
 void insertAtPosition(int data, int position, Node *&head, Node *&tail)
 {
+    int len = findLength(head);
+
+    if (position == 1)
+    {
+        insertAtHead(head, tail, data);
+        return;
+    }
+    else if (position > len)
+    {
+        insertAtTail(head, tail, data);
+        return;
+    }
+    else
+    {
+        Node *newNode = new Node(data);
+
+        Node *prev = NULL;
+        NOde *curr = head;
+        while (position != 1)
+        {
+            position--;
+            prev = curr;
+            curr = curr->next;
+        }
+        newNode->next = curr;
+        prev->next = newNode;
+    }
 }
 
 int main()
