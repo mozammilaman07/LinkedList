@@ -52,6 +52,16 @@ void insertAtTail(Node *&head, Node *&tail, int data)
     }
 }
 
+void print(Node *head)
+{
+    Node *temp = head;
+    while (temp != NULL)
+    {
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+}
+
 int main()
 {
 }
