@@ -74,6 +74,10 @@ int findLength(Node *&head)
     return len;
 }
 
+void insertAtPosition(int data, int position, Node *&head, Node *&tail)
+{
+}
+
 int main()
 {
 }
