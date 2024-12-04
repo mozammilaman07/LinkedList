@@ -36,6 +36,10 @@ void insertAtHead(Node *&head, Node *&tail, int data)
     }
 }
 
+void insertAtTail()
+{
+}
+
 int main()
 {
 }
