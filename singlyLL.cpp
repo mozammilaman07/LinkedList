@@ -36,7 +36,7 @@ void insertAtHead(Node *&head, Node *&tail, int data)
     }
 }
 
-void insertAtTail()
+void insertAtTail(Node *&head, Node *&tail, int data)
 {
 }
 
